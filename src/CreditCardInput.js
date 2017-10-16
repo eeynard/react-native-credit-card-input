@@ -47,9 +47,9 @@ export default class CreditCardInput extends Component {
     labels: PropTypes.object,
     placeholders: PropTypes.object,
 
-    labelStyle: Text.propTypes.style,
-    inputStyle: Text.propTypes.style,
-    inputContainerStyle: View.propTypes.style,
+    labelStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+    inputStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+    inputContainerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
 
     validColor: PropTypes.string,
     invalidColor: PropTypes.string,
@@ -63,7 +63,7 @@ export default class CreditCardInput extends Component {
 
     allowScroll: PropTypes.bool,
 
-    additionalInputsProps: PropTypes.objectOf(PropTypes.shape(TextInput.propTypes)),
+    additionalInputsProps: PropTypes.object,
   };
 
   static defaultProps = {
