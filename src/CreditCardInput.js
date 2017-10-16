@@ -47,8 +47,8 @@ export default class CreditCardInput extends Component {
     labels: PropTypes.object,
     placeholders: PropTypes.object,
 
-    labelStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
-    inputStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+    labelStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number, PropTypes.array]),
+    inputStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number, PropTypes.array]),
     inputContainerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
 
     validColor: PropTypes.string,
